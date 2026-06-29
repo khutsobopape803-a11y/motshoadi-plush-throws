@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Motshoadi's Plush Throws — Luxury Marble Plush Blankets from Limpopo</title>
+  <meta name="description" content="Luxurious marble-effect plush throws with gold detailing, from the heart of Limpopo, South Africa. By Naume Bopape.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --navy: #0C1B33;
+      --navy-light: #162D50;
+      --gold: #C5A55A;
+      --gold-light: #D4B96A;
+      --gold-dark: #A08840;
+      --champagne: #D4C5A9;
+      --charcoal: #1A1A1A;
+      --ivory: #F7F4EF;
+      --warm-white: #FAFAF7;
+      --text-primary: #1A1A1A;
+      --text-secondary: #4A4A4A;
+      --text-muted: #8A8A8A;
+    }
+
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--text-primary);
+      background: var(--warm-white);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .display { font-family: 'Cormorant Garamond', Georgia, serif; }
+    h1, h2, h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; line-height: 1.1; }
+    h1 { font-size: clamp(2.6rem, 6.5vw, 5rem); letter-spacing: -0.02em; }
+    h2 { font-size: clamp(2rem, 4.5vw, 3.5rem); letter-spacing: -0.01em; }
+    h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
+    p { line-height: 1.7; font-weight: 300; }
+
+    /* ─── Navigation ─── */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 1.5rem 3rem;
+      display: flex; justify-content: space-between; align-items: center;
+      background: var(--warm-white);
+      transition: background 0.5s, padding 0.4s, box-shadow 0.4s;
+    }
+    .nav.scrolled {
+      background: rgba(250, 250, 247, 0.98);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      padding: 1rem 3rem;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem; font-weight: 600;
+      color: var(--navy); text-decoration: none;
+      letter-spacing: 0.04em;
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a {
+      text-decoration: none; color: var(--text-secondary);
+      font-size: 0.82rem; font-weight: 400;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      transition: color 0.3s; position: relative;
+    }
+    .nav-links a::after {
+      content: ''; position: absolute; bottom: -4px; left: 0;
+      width: 0; height: 1px; background: var(--gold);
+      transition: width 0.3s;
+    }
+    .nav-links a:hover { color: var(--navy); }
+    .nav-links a:hover::after { width: 100%; }
+
+    .nav-order {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.6rem 1.5rem;
+      background: var(--navy); color: #fff;
+      text-decoration: none; font-size: 0.78rem;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      border: 1px solid transparent; transition: all 0.35s;
+    }
+    .nav-order:hover {
+      background: transparent; color: var(--navy);
+      border-color: var(--navy);
+    }
+
+    .menu-toggle {
+      display: none; background: none; border: none; cursor: pointer;
+      width: 44px; height: 44px; position: relative;
+      padding: 10px 6px;
+    }
+    .menu-toggle span {
+      display: block; width: 100%; height: 1.5px;
+      background: var(--navy); position: absolute; left: 0;
+      transition: all 0.3s;
+    }
+    .menu-toggle span:nth-child(1) { top: 0; }
+    .menu-toggle span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+    .menu-toggle span:nth-child(3) { bottom: 0; }
+    .menu-toggle.active span:nth-child(1) { top: 50%; transform: translateY(-50%) rotate(45deg); }
+    .menu-toggle.active span:nth-child(2) { opacity: 0; }
+    .menu-toggle.active span:nth-child(3) { bottom: 50%; transform: translateY(50%) rotate(-45deg); }
+
+    /* ─── Hero ─── */
+    .hero {
+      min-height: 100vh;
+      display: flex; align-items: flex-end;
+      padding: 8rem 3rem 5rem;
+      position: relative;
+      background: var(--navy);
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+    }
+    .hero-video {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+    .hero-bg::before {
+      content: ''; position: absolute; inset: 0; z-index: 1;
+      background: linear-gradient(135deg, rgba(12,27,51,0.6) 0%, rgba(15,36,64,0.45) 40%, rgba(26,51,85,0.4) 70%, rgba(12,27,51,0.55) 100%);
+    }
+    .hero-bg::after {
+      content: ''; position: absolute; z-index: 1;
+      bottom: 0; left: 0; right: 0; height: 40%;
+      background: linear-gradient(to top, rgba(12,27,51,0.9), transparent);
+    }
+    .hero-gold-line {
+      position: absolute; top: 50%; right: 8%;
+      width: 1px; height: 200px; transform: translateY(-50%);
+      background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+      opacity: 0.3;
+    }
+    .hero-content { position: relative; z-index: 2; max-width: 750px; }
+    .hero-eyebrow {
+      font-size: 0.78rem; letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1.5rem; font-weight: 400;
+    }
+    .hero h1 { margin-bottom: 1.5rem; color: #fff; }
+    .hero h1 em {
+      font-style: italic;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-desc {
+      font-size: 1.05rem; color: rgba(255,255,255,0.55);
+      max-width: 520px; margin-bottom: 2.5rem;
+    }
+    .hero-cta-group { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      padding: 1rem 2.2rem;
+      background: var(--gold); color: var(--navy);
+      text-decoration: none; font-size: 0.82rem;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      font-weight: 500; transition: all 0.35s;
+      border: 1px solid var(--gold);
+    }
+    .btn-primary:hover { background: var(--gold-light); border-color: var(--gold-light); }
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      padding: 1rem 2.2rem;
+      background: transparent; color: #fff;
+      text-decoration: none; font-size: 0.82rem;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      font-weight: 400; border: 1px solid rgba(255,255,255,0.2);
+      transition: all 0.35s;
+    }
+    .btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+
+    .hero-scroll-hint {
+      position: absolute; bottom: 2.5rem; right: 3rem;
+      display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+      color: rgba(255,255,255,0.3); font-size: 0.68rem;
+      letter-spacing: 0.15em; text-transform: uppercase;
+    }
+    .scroll-line {
+      width: 1px; height: 48px;
+      background: rgba(255,255,255,0.1);
+      position: relative; overflow: hidden;
+    }
+    .scroll-line::after {
+      content: ''; position: absolute; top: -100%; left: 0;
+      width: 100%; height: 100%; background: var(--gold);
+      animation: scrollDown 2s ease-in-out infinite;
+    }
+    @keyframes scrollDown { 0% { top: -100%; } 50% { top: 100%; } 100% { top: 100%; } }
+
+    /* ─── Gold Divider ─── */
+    .gold-divider {
+      display: flex; justify-content: center; align-items: center;
+      padding: 3rem 0; gap: 1rem;
+    }
+    .gold-divider-line { width: 60px; height: 1px; background: var(--gold); opacity: 0.3; }
+    .gold-divider-diamond {
+      width: 6px; height: 6px; background: var(--gold);
+      transform: rotate(45deg); opacity: 0.5;
+    }
+
+    /* ─── About ─── */
+    .about {
+      padding: 6rem 3rem;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 5rem; max-width: 1300px; margin: 0 auto;
+      align-items: center;
+    }
+    .about-visual {
+      aspect-ratio: 4/5; position: relative; overflow: hidden;
+    }
+    .about-visual img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+    .about-visual-placeholder {
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.8rem; color: var(--text-muted);
+      letter-spacing: 0.1em; text-transform: uppercase;
+      background: linear-gradient(145deg, #E8E0D0, #D0C8B8);
+    }
+    .about-visual::after {
+      content: ''; position: absolute; top: -10px; right: -10px;
+      width: 120px; height: 120px; border: 1px solid var(--gold); opacity: 0.3;
+    }
+    .about-text .section-label {
+      font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--gold-dark); margin-bottom: 1.5rem; font-weight: 500;
+    }
+    .about-text h2 { margin-bottom: 1.5rem; }
+    .about-text p { color: var(--text-secondary); margin-bottom: 1.2rem; font-size: 0.95rem; }
+    .about-stats {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 2rem; margin-top: 2.5rem; padding-top: 2.5rem;
+      border-top: 1px solid var(--champagne);
+    }
+    .stat-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem; font-weight: 600;
+      color: var(--navy); line-height: 1;
+    }
+    .stat-label { font-size: 0.73rem; color: var(--text-muted); letter-spacing: 0.05em; margin-top: 0.3rem; }
+
+    /* ─── Collections ─── */
+    .collections { padding: 6rem 3rem; background: var(--navy); color: #fff; }
+    .collections-header {
+      max-width: 1300px; margin: 0 auto 4rem;
+      display: flex; justify-content: space-between; align-items: flex-end;
+    }
+    .collections-header .section-label {
+      font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1rem;
+    }
+    .collections-header h2 { color: #fff; }
+    .collections-header p { color: rgba(255,255,255,0.4); font-size: 0.88rem; max-width: 400px; }
+    .filter-tabs { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .filter-tab {
+      padding: 0.5rem 1.2rem; background: transparent;
+      border: 1px solid rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.5); font-size: 0.76rem;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      cursor: pointer; transition: all 0.3s; font-family: 'Inter', sans-serif;
+    }
+    .filter-tab:hover, .filter-tab.active { border-color: var(--gold); color: #fff; }
+
+    .products-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem; max-width: 1300px; margin: 0 auto;
+    }
+    .product-card { position: relative; cursor: pointer; }
+    .product-image {
+      aspect-ratio: 3/4; overflow: hidden; position: relative;
+      background: var(--navy-light);
+    }
+    .product-image img {
+      width: 100%; height: 100%; object-fit: cover;
+      transform: scale(1.01);
+      transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .product-image-placeholder {
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.75rem; color: rgba(255,255,255,0.25);
+      letter-spacing: 0.1em; text-transform: uppercase;
+      background: linear-gradient(145deg, var(--navy-light), #1A3050);
+      transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .product-card:hover .product-image img,
+    .product-card:hover .product-image-placeholder { transform: scale(1.05); }
+    .product-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(12,27,51,0.7) 0%, transparent 50%);
+      opacity: 0; transition: opacity 0.4s;
+      display: flex; align-items: flex-end; padding: 1.5rem;
+    }
+    .product-card:hover .product-overlay { opacity: 1; }
+    .product-quick-order {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      background: var(--gold); color: var(--navy);
+      text-decoration: none; font-size: 0.73rem;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      font-weight: 500; transition: background 0.3s;
+    }
+    .product-quick-order:hover { background: var(--gold-light); }
+    .product-info { padding: 1.2rem 0; }
+    .product-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem; font-weight: 500; margin-bottom: 0.3rem;
+    }
+    .product-meta { display: flex; justify-content: space-between; align-items: center; }
+    .product-category {
+      font-size: 0.73rem; color: rgba(255,255,255,0.35);
+      letter-spacing: 0.05em; text-transform: uppercase;
+    }
+    .product-price {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem; color: var(--gold);
+    }
+    .product-includes {
+      font-size: 0.72rem; color: rgba(255,255,255,0.3);
+      margin-top: 0.3rem;
+    }
+
+    /* ─── Showcase Gallery ─── */
+    .showcase-gallery {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 1.5rem;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+    .showcase-item {
+      overflow: hidden;
+      border-radius: 2px;
+    }
+    .showcase-item.showcase-large {
+      grid-row: 1 / 3;
+    }
+    .showcase-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .showcase-item:hover img {
+      transform: scale(1.03);
+    }
+    .showcase-cta {
+      max-width: 1300px;
+      margin: 3rem auto 0;
+      text-align: center;
+    }
+    .showcase-cta-text {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 700px) {
+      .showcase-gallery {
+        grid-template-columns: 1fr;
+      }
+      .showcase-item.showcase-large {
+        grid-row: auto;
+      }
+    }
+
+    /* ─── Features ─── */
+    .features { padding: 4rem 3rem; background: var(--ivory); }
+    .features-inner {
+      max-width: 1300px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 3rem;
+    }
+    .feature-item { text-align: center; padding: 2rem 1rem; }
+    .feature-icon {
+      width: 48px; height: 48px; margin: 0 auto 1.2rem;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .feature-icon svg { width: 36px; height: 36px; stroke: var(--gold-dark); fill: none; stroke-width: 1.5; }
+    .feature-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem; font-weight: 600; margin-bottom: 0.5rem;
+    }
+    .feature-desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.6; }
+
+    /* ─── Testimonials ─── */
+    .testimonials { padding: 6rem 3rem; background: var(--warm-white); }
+    .testimonials-inner { max-width: 900px; margin: 0 auto; text-align: center; }
+    .testimonials .section-label {
+      font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--gold-dark); margin-bottom: 1rem;
+    }
+    .testimonials h2 { margin-bottom: 3rem; }
+    .testimonial-card {
+      padding: 3rem; background: #fff;
+      border: 1px solid rgba(0,0,0,0.04);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.03);
+      margin-bottom: 2rem;
+    }
+    .testimonial-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem; font-style: italic; line-height: 1.6;
+      color: var(--text-primary); margin-bottom: 1.5rem;
+    }
+    .testimonial-author { font-size: 0.82rem; color: var(--text-muted); letter-spacing: 0.05em; }
+    .testimonial-author strong { color: var(--text-primary); font-weight: 500; }
+
+    /* ─── Contact ─── */
+    .contact { padding: 6rem 3rem; background: var(--navy); color: #fff; text-align: center; }
+    .contact-inner { max-width: 750px; margin: 0 auto; }
+    .contact .section-label {
+      font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1rem;
+    }
+    .contact h2 { color: #fff; margin-bottom: 1rem; }
+    .contact > .contact-inner > p { color: rgba(255,255,255,0.45); margin-bottom: 2.5rem; font-size: 0.95rem; }
+    .contact-owner {
+      margin-bottom: 2.5rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem; color: rgba(255,255,255,0.7);
+    }
+    .contact-owner strong { color: #fff; }
+    .contact-buttons {
+      display: flex; justify-content: center; gap: 1rem;
+      flex-wrap: wrap; margin-bottom: 3rem;
+    }
+    .btn-whatsapp {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      padding: 1rem 2.2rem;
+      background: #25D366; color: #fff;
+      text-decoration: none; font-size: 0.82rem;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      font-weight: 500; transition: all 0.35s; border: 1px solid #25D366;
+    }
+    .btn-whatsapp:hover { background: #20BD5A; border-color: #20BD5A; }
+    .btn-call {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      padding: 1rem 2.2rem;
+      background: transparent; color: #fff;
+      text-decoration: none; font-size: 0.82rem;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      font-weight: 400; border: 1px solid rgba(255,255,255,0.2);
+      transition: all 0.35s;
+    }
+    .btn-call:hover { border-color: var(--gold); color: var(--gold); }
+
+    .contact-details {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 2rem; padding-top: 3rem;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .contact-detail-label {
+      font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase;
+      color: rgba(255,255,255,0.3); margin-bottom: 0.5rem;
+    }
+    .contact-detail-value {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem; color: rgba(255,255,255,0.75);
+    }
+    .contact-detail-value a {
+      color: rgba(255,255,255,0.75); text-decoration: none;
+      transition: color 0.3s;
+    }
+    .contact-detail-value a:hover { color: var(--gold); }
+
+    /* ─── Footer ─── */
+    .footer {
+      padding: 2.5rem 3rem; background: #080E1A;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem; font-weight: 600;
+      color: rgba(255,255,255,0.5); letter-spacing: 0.04em;
+    }
+    .footer-copy { font-size: 0.73rem; color: rgba(255,255,255,0.2); }
+
+    /* ─── Animations ─── */
+    .reveal {
+      opacity: 0; transform: translateY(40px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+    .reveal-left {
+      opacity: 0; transform: translateX(-40px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal-right {
+      opacity: 0; transform: translateX(40px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal-left.visible, .reveal-right.visible { opacity: 1; transform: translateX(0); }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal, .reveal-left, .reveal-right { opacity: 1; transform: none; transition: none; }
+      .scroll-line::after { animation: none; }
+    }
+
+    /* ─── Mobile ─── */
+    @media (max-width: 900px) {
+      .nav { padding: 1.2rem 1.5rem; }
+      .nav.scrolled { padding: 0.8rem 1.5rem; }
+      .nav-links, .nav-order-desktop { display: none; }
+      .menu-toggle { display: block; }
+      .nav-mobile {
+        position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+        background: var(--warm-white); z-index: 99;
+        display: flex; flex-direction: column;
+        justify-content: center; align-items: center; gap: 2rem;
+        opacity: 0; pointer-events: none; visibility: hidden; transition: opacity 0.4s, visibility 0.4s;
+      }
+      .nav-mobile.open { opacity: 1; pointer-events: all; visibility: visible; }
+      .nav-mobile a {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 2rem; text-decoration: none; color: var(--navy);
+      }
+      .hero { padding: 7rem 1.5rem 3rem; min-height: 90vh; }
+      .hero-scroll-hint { display: none; }
+      .hero-gold-line { display: none; }
+      .about { grid-template-columns: 1fr; gap: 2.5rem; padding: 4rem 1.5rem; }
+      .about-visual { aspect-ratio: 4/3; }
+      .collections { padding: 4rem 1.5rem; }
+      .collections-header { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+      .collections-header p { text-align: left; }
+      .showcase-gallery { gap: 1rem; }
+      .showcase-cta { margin-top: 2rem; }
+      .features { padding: 3rem 1.5rem; }
+      .features-inner { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+      .testimonials { padding: 4rem 1.5rem; }
+      .testimonial-card { padding: 2rem 1.5rem; }
+      .testimonial-quote { font-size: 1.2rem; }
+      .contact { padding: 4rem 1.5rem; }
+      .contact-buttons { flex-direction: column; align-items: center; }
+      .btn-whatsapp, .btn-call { width: 100%; justify-content: center; }
+      .contact-details { grid-template-columns: 1fr; gap: 1.5rem; }
+      .footer { padding: 2rem 1.5rem; flex-direction: column; text-align: center; }
+    }
+    @media (max-width: 500px) {
+      .nav-logo { font-size: 1.1rem; }
+      h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.8rem; }
+      .hero { min-height: 85vh; padding: 6rem 1.2rem 2.5rem; }
+      .hero-eyebrow { font-size: 0.7rem; margin-bottom: 1rem; }
+      .hero-desc { font-size: 0.95rem; }
+      .hero-cta-group { flex-direction: column; }
+      .hero-cta-group a { text-align: center; justify-content: center; }
+      .btn-primary, .btn-secondary { padding: 0.9rem 1.8rem; font-size: 0.8rem; }
+      .gold-divider { padding: 2rem 0; }
+      .about { padding: 3rem 1.2rem; gap: 2rem; }
+      .about-visual::after { display: none; }
+      .about-stats { grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+      .stat-number { font-size: 1.8rem; }
+      .stat-label { font-size: 0.65rem; }
+      .collections { padding: 3rem 1.2rem; }
+      .showcase-cta .btn-primary { width: 100%; justify-content: center; }
+      .features { padding: 2.5rem 1.2rem; }
+      .features-inner { grid-template-columns: 1fr; gap: 1rem; }
+      .feature-item { padding: 1.5rem 1rem; }
+      .testimonials { padding: 3rem 1.2rem; }
+      .testimonial-card { padding: 1.5rem 1.2rem; }
+      .contact { padding: 3rem 1.2rem; }
+      .contact-owner { font-size: 1.05rem; }
+      .footer { padding: 1.5rem 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">Motshoadi's <span>Plush</span> Throws</a>
+    <ul class="nav-links">
+      <li><a href="#about">Our Story</a></li>
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/27721410201?text=Hi%20Naume%2C%20I%27d%20like%20to%20order%20a%20throw" class="nav-order nav-order-desktop" target="_blank" rel="noopener">Order Now</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav-mobile" id="mobileMenu">
+    <a href="#about" class="mobile-link">Our Story</a>
+    <a href="#collections" class="mobile-link">Collections</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="https://wa.me/27721410201?text=Hi%20Naume%2C%20I%27d%20like%20to%20order%20a%20throw" class="mobile-link btn-primary" style="margin-top:1rem;" target="_blank" rel="noopener">Order Now</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg">
+      <video class="hero-video" autoplay muted loop playsinline poster="images/hero-bg.jpg">
+        <source src="images/WhatsApp Video 2026-06-29 at 15.03.50.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-gold-line"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Limpopo, South Africa</p>
+      <h1 class="reveal reveal-delay-1">Luxury plush throws with <em>golden detail</em></h1>
+      <p class="hero-desc reveal reveal-delay-2">Marble-effect plush throws and matching cushion covers that turn any room into a statement. Each piece is chosen for its weight, softness, and beauty.</p>
+      <div class="hero-cta-group reveal reveal-delay-3">
+        <a href="#collections" class="btn-primary">
+          <span>View Collection</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://wa.me/27721410201?text=Hi%20Naume%2C%20I%27d%20like%20to%20order%20a%20throw" class="btn-secondary" target="_blank" rel="noopener">
+          <span>WhatsApp Naume</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="gold-divider">
+    <div class="gold-divider-line"></div>
+    <div class="gold-divider-diamond"></div>
+    <div class="gold-divider-line"></div>
+  </div>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="about-visual reveal-left">
+      <img src="images/WhatsApp Image 2026-06-29 at 20.00.55.jpeg" alt="Motshoadi's luxury plush throw with gold marble detailing">
+    </div>
+    <div class="about-text reveal-right">
+      <p class="section-label">Our Story</p>
+      <h2>Elegance starts at home</h2>
+      <p>I'm Naume Bopape, and I started this business from a simple belief: everyone deserves a touch of luxury in their home. Based in Limpopo, I hand-select every throw and cushion set for its quality, weight, and that unmistakable marble-gold finish.</p>
+      <p>These aren't ordinary blankets — they're statement pieces. Whether you're styling your lounge, gifting someone special, or treating yourself, each plush throw is designed to be noticed.</p>
+      <div class="about-stats">
+        <div>
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+        <div>
+          <div class="stat-number">9</div>
+          <div class="stat-label">Colour Variants</div>
+        </div>
+        <div>
+          <div class="stat-number">5★</div>
+          <div class="stat-label">Rated Service</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="gold-divider">
+    <div class="gold-divider-line"></div>
+    <div class="gold-divider-diamond"></div>
+    <div class="gold-divider-line"></div>
+  </div>
+
+  <!-- Collections -->
+  <section class="collections" id="collections">
+    <div class="collections-header">
+      <div>
+        <p class="section-label">The Collection</p>
+        <h2>Marble Plush Throws</h2>
+      </div>
+      <p style="color: rgba(255,255,255,0.45); font-size: 0.95rem; max-width: 450px; text-align: right;">Available in multiple colours — navy, champagne, charcoal, amethyst, ivory, teal and more. From <strong style="color: var(--gold);">R 500</strong> each.</p>
+    </div>
+
+    <div class="showcase-gallery">
+      <div class="showcase-item showcase-large reveal">
+        <img src="images/WhatsApp Image 2026-06-29 at 14.40.33.22jpeg.jpeg" alt="Motshoadi's marble plush throw collection">
+      </div>
+      <div class="showcase-item reveal reveal-delay-1">
+        <img src="images/WhatsApp Image 2026-06-29 at 14.40.32 (3).jpeg" alt="Plush throws in navy, champagne, charcoal and ivory">
+      </div>
+      <div class="showcase-item reveal reveal-delay-2">
+        <img src="images/WhatsApp Image 2026-06-29 at 14.40.33.jpeg" alt="Marble gold plush throws styled on sofas">
+      </div>
+    </div>
+
+    <div class="showcase-cta reveal reveal-delay-3">
+      <p class="showcase-cta-text">WhatsApp Naume to see available colours and place your order</p>
+      <a href="https://wa.me/27721410201?text=Hi%20Naume%2C%20I%27d%20like%20to%20order%20a%20plush%20throw.%20What%20colours%20are%20available%3F" class="btn-primary" target="_blank" rel="noopener" style="background: var(--gold); color: var(--navy); border-color: var(--gold);">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.613.613l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.34 0-4.507-.794-6.234-2.13l-.436-.344-3.013 1.01 1.01-3.013-.344-.436A9.956 9.956 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+        Order via WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="features-inner">
+      <div class="feature-item reveal reveal-delay-1">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+        </div>
+        <div class="feature-title">Premium Plush</div>
+        <p class="feature-desc">Thick, heavy-weight plush fabric with marble-effect gold detailing</p>
+      </div>
+      <div class="feature-item reveal reveal-delay-2">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="feature-title">Nationwide Delivery</div>
+        <p class="feature-desc">Carefully packaged and delivered to your doorstep anywhere in South Africa</p>
+      </div>
+      <div class="feature-item reveal reveal-delay-3">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3l-4 4-4-4"/></svg>
+        </div>
+        <div class="feature-title">Multiple Colours</div>
+        <p class="feature-desc">Available in navy, champagne, charcoal, amethyst, ivory, teal and more</p>
+      </div>
+      <div class="feature-item reveal reveal-delay-4">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </div>
+        <div class="feature-title">Personal Service</div>
+        <p class="feature-desc">Order directly via WhatsApp — chat with Naume personally</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="testimonials-inner">
+      <p class="section-label reveal">What Customers Say</p>
+      <h2 class="reveal reveal-delay-1">Loved across South Africa</h2>
+      <div class="testimonial-card reveal reveal-delay-2">
+        <p class="testimonial-quote">"The quality is unmatched. I ordered the Ocean Marble for my lounge and it completely transformed the room. The gold detailing catches the light beautifully. Already ordering two more as gifts."</p>
+        <p class="testimonial-author"><strong>Thandi M.</strong> — Johannesburg</p>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-3">
+        <p class="testimonial-quote">"Fast delivery, beautiful packaging, and the blanket itself is luxurious. You can feel this is not your average throw. Naume was so helpful on WhatsApp — worth every rand."</p>
+        <p class="testimonial-author"><strong>Pieter V.</strong> — Polokwane</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <p class="section-label reveal">Get in Touch</p>
+      <h2 class="reveal reveal-delay-1">Ready to order?</h2>
+      <p class="reveal reveal-delay-2" style="color: rgba(255,255,255,0.45); margin-bottom: 1.5rem; font-size: 0.95rem;">Reach out to Naume directly via WhatsApp or give her a call. She'll help you choose the perfect throw and arrange delivery anywhere in South Africa.</p>
+      <p class="contact-owner reveal reveal-delay-2">
+        <strong>Naume Bopape</strong> — Owner &amp; Curator
+      </p>
+      <div class="contact-buttons reveal reveal-delay-3">
+        <a href="https://wa.me/27721410201?text=Hi%20Naume%2C%20I%27d%20like%20to%20order%20a%20throw" class="btn-whatsapp" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.613.613l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.34 0-4.507-.794-6.234-2.13l-.436-.344-3.013 1.01 1.01-3.013-.344-.436A9.956 9.956 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+          WhatsApp Naume
+        </a>
+        <a href="tel:+27721410201" class="btn-call">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          Call 072 141 0201
+        </a>
+      </div>
+      <div class="contact-details reveal reveal-delay-4">
+        <div>
+          <div class="contact-detail-label">Owner</div>
+          <div class="contact-detail-value">Naume Bopape</div>
+        </div>
+        <div>
+          <div class="contact-detail-label">Phone / WhatsApp</div>
+          <div class="contact-detail-value"><a href="tel:+27721410201">072 141 0201</a></div>
+        </div>
+        <div>
+          <div class="contact-detail-label">Location</div>
+          <div class="contact-detail-value">Limpopo, South Africa</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-logo">Motshoadi's Plush Throws</div>
+    <p class="footer-copy">&copy; 2026 Motshoadi's Plush Throws. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('open');
+      document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+    });
+    function closeMobile() {
+      menuToggle.classList.remove('active');
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.querySelectorAll('.mobile-link').forEach(function(link) {
+      link.addEventListener('click', closeMobile);
+    });
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!prefersReducedMotion) {
+      const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+      reveals.forEach(el => observer.observe(el));
+    }
+
+    document.querySelectorAll('.filter-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
